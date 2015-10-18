@@ -1,11 +1,12 @@
 source 'http://rubygems.org'
 
 gem 'sinatra'
-gem 'sinatra-reloader'
 # gem 'sinatra-activerecord'
-
-gem 'pry'
-gem 'pry-debugger'
+# gem 'pg'
 gem 'yelp', require: 'yelp'
 
-# gem 'pg'
+group :development do
+	gem 'sinatra-reloader'
+	gem 'pry'
+	gem 'pry-debugger'
+end
